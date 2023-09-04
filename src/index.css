@@ -1,0 +1,271 @@
+
+/* index.css */
+
+/* Style for the navigation links */
+.navbar-nav .nav-link {
+  color: black; /* Default color */
+  text-decoration: none; /* Remove underline */
+  position: relative; /* Add position for pseudo-element */
+}
+
+/* Style for the active navigation link */
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: blue; /* Change color when hovering or active */
+}
+
+/* Style for the bottom line */
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust the value as needed */
+  width: 100%;
+  height: 2px;
+  background-color: blue; /* Line color */
+  transform: scaleX(0); /* Initially hidden */
+  transform-origin: center bottom;
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.navbar-nav .nav-link.active::after,
+.navbar-nav .nav-link:hover::after {
+  transform: scaleX(1); /* Show the line when hovering or active */
+}
+
+
+/* nav{
+
+  background-color: white;
+} */
+/* .container-fluid{
+
+  background-color: white;
+  columns: blue;
+} */
+
+.navbar-brand{
+
+  color: blue;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333; /* Change the color as needed */
+  margin-right: 20px; /* Adjust spacing between links */
+}
+
+.nav-link:hover{
+
+  color:blue;
+
+}
+li:hover{
+
+  color:blue;
+}
+.active-link {
+  color: blue;
+  font-weight: bold; /* Make the active link bold */
+  border-bottom: 2px solid blue; /* Add black 2px border-bottom */
+}
+
+
+
+
+
+
+
+#header{
+
+
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#header .brand-name{
+
+
+  font-weight: bold;
+  color:blue;
+}
+/* Apply these styles to anchor tags with the "anchorclass" class */
+.anchor-tag {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:red;
+  color:gold;
+  text-decoration: none;
+  border-radius: 50px; /* Making it an oval shape */
+  border: 2px solid #000000; /* Black border */
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+/* Change background color on hover */
+.anchor-tag:hover {
+  background-color: #2980b9;
+}
+
+
+.animated-image {
+  width: 200px; /* Adjust as needed */
+  height: auto;
+  animation: moveUpDown 2s infinite alternate; /* 1 second duration, infinite loop, alternate direction */
+}
+
+@keyframes moveUpDown {
+  from {
+      transform: translateY(0);
+  }
+  to {
+      transform: translateY(-20px); /* Adjust the value for the desired vertical movement */
+  }
+}
+
+
+
+
+
+
+.input-group{
+
+  margin-top: 20px;
+  border: none;
+}
+
+.formclass{
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #000000;
+}
+
+.formclass:hover{
+
+  border: none;
+}
+
+
+
+/* this is for service page */
+
+.div1{
+
+background-color: darkgrey;
+width:100%;
+margin-top:30px;
+height: 500px;
+
+}
+.div1 h1{
+
+color: rgb(129, 95, 160);
+}
+
+.col-md-4:hover {
+  transition: box-shadow 0.3s ease; /* Add a smooth transition effect */
+}
+
+
+
+/* this is contact page css */
+.contactdiv1{
+
+  width:100%;
+  height: 600px;
+  background-color: white;
+  margin-top: 50px;
+  box-shadow: #2980b9;
+
+
+
+
+
+}
+
+.contactdiv1 h1{
+
+  color: #2980b9;
+}
+
+.contactdiv1 hr{
+
+  width: 60px;
+  border: none;
+  margin-left: 50%; /* Remove the default border */
+  border-top: 4px solid red; /* Add a custom border style */
+  font-weight: 800;
+}
+
+.row{
+
+  margin-left: 10px;
+}
+.div2,.div3{
+
+   width: 0%;/* Adjusted width to leave space for margin */
+  height: 400px;
+  padding: 0 50px;
+  background-color: white; /* Changed background color to white */
+  border-top: 5px solid red;
+  border-bottom: 5px solid red;
+  box-shadow: 0px 0px 10px rgba(41, 128, 185, 0.5); 
+
+}
+
+.div2{
+
+  width: 30px;
+}
+label{
+
+  margin-top: 20px;
+}
+input{
+
+  height: 40px;
+}
+.label2{
+
+
+  margin-left: 40%;
+}
+.input2{
+
+  margin-left: 20%;
+}
+.input3{
+
+  width: 100%;
+}
+
+input,textarea {
+  border: 2px solid gray;
+  padding: 10px;
+  transition: border-color 0.3s;
+}
+
+/* Style for input fields when hovered */
+input,textarea:hover {
+  border: 2px solid gray;
+}
+
+/* Style for input fields when focused */
+input,textarea:focus {
+  border: 2px solid gray;
+   outline: none; /* Remove default focus outline  */
+}
+textarea{
+
+  width: 100%;
+  height: 100px;
+}
+.btn2{
+
+background-color: red;
+  margin-left: 50%;
+  width: 90px;
+  border-radius: 5px;
+  margin-top: 20px;
+  border: none;
+}
